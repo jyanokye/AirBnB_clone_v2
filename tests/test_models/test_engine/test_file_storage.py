@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+# -*- coding: utf-8 -*-
 """ Module for testing file storage"""
 import sys
 import unittest
