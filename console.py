@@ -301,7 +301,6 @@ class HBNBCommand(cmd.Cmd):
 
             args = [att_name, att_val]
 
-
         # retrieve dictionary of current objects
         new_dict = storage.all()[key]
 
