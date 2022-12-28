@@ -72,7 +72,7 @@ class HBNBCommand(cmd.Cmd):
                 pline = pline[2].strip()  # pline is now str
                 if pline:
                     # check for *args or **kwargs
-                    if pline[0] == '{' and pline[-1] =='}'\
+                    if pline[0] == '{' and pline[-1] == '}'\
                             and type(eval(pline)) is dict:
                         _args = pline
                     else:
@@ -124,7 +124,7 @@ class HBNBCommand(cmd.Cmd):
                 k, v = param.split('=')
                 try:
                     attribute = HBNBCommand.verify_attribute(v)
-                except:
+                except Exception:
                     continue
                 if not attribute:
                     continue
@@ -303,6 +303,7 @@ class HBNBCommand(cmd.Cmd):
 
         # retrieve dictionary of current objects
         new_dict = storage.all()[key]
+
 
         # iterate through attr names and values
         for i, att_name in enumerate(args):
