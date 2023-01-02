@@ -13,7 +13,7 @@ fi
 sudo mkdir -p /data/web_static/releases/test /data/web_static/shared/
 
 # create index.html for test directory
-echo "<h1>Welcome to Fobistems, by Effah Annan! <\h1>" | sudo dd status=none of=/data/web_static/releases/test/index.html
+echo "<h1>Welcome to Fobistems, by James Anokye! <\h1>" | sudo dd status=none of=/data/web_static/releases/test/index.html
 
 # create symbolic link
 sudo ln -sf /data/web_static/releases/test /data/web_static/current
